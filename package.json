@@ -1,0 +1,43 @@
+{
+  "name": "iteratio-plugin-workflow",
+  "version": "0.1.0",
+  "description": "TODO/context management plugin to keep LLM on track during long-running tasks",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "iteratio",
+    "plugin",
+    "workflow",
+    "todo",
+    "context",
+    "llm",
+    "agent"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "iteratio": "*",
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.1.6"
+  }
+}
